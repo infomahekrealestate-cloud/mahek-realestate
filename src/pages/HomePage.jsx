@@ -43,7 +43,7 @@ export default function HomePage({
       />
 
       {/* 5. Services Offered by Mahek Real Estate */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
 
       {/* 6. Institutional Clients & Partners */}
       <ClientsSection />
