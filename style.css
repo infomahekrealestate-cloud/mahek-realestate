@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-luxury: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius-3xl: 1rem;
+  --radius-2xl: 0.875rem;
+}
+
+@layer base {
+  :root {
+    --gold-primary: #c59b27;
+    --gold-light: #dfba52;
+    --gold-dark: #9a7210;
+    --bg-light: #ffffff;
+    --bg-card: #ffffff;
+    --border-gold: rgba(197, 155, 39, 0.25);
+  }
+
+  *, *::before, *::after {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+    overflow-x: hidden;
+  }
+
+  button, input, select, textarea {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-luxury, .font-serif, .font-sans {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+}
+
+/* Luxury Solid Accent Utilities (No Gradients) */
+.gold-gradient-text {
+  color: #c59b27;
+}
+
+.gold-gradient-bg {
+  background-color: #c59b27;
+}
+
+.gold-gradient-subtle {
+  background-color: rgba(197, 155, 39, 0.05);
+}
+
+.gold-border {
+  border-color: rgba(197, 155, 39, 0.3);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(197, 155, 39, 0.9);
+  box-shadow: 0 10px 30px rgba(197, 155, 39, 0.2);
+}
+
+.luxury-card {
+  background: #ffffff;
+  border: 1px solid rgba(197, 155, 39, 0.2);
+  border-radius: 0.875rem;
+  box-shadow: none;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: rgba(197, 155, 39, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(197, 155, 39, 0.18), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================================
+   GLOBAL BOX-SHADOW CONTROL:
+   Remove all resting box shadows across the website.
+   Box shadows are displayed exclusively on hover, focus, or active interaction.
+   ============================================================ */
+*:not(:hover):not(:focus):not(:focus-visible):not(:focus-within):not(:active):not(:is(.group:hover *)):not(:is(.group:focus-within *)):not([role="dialog"]):not([role="dialog"] *) {
+  box-shadow: none !important;
+}
+
+/* Ensure smooth transition for hover shadows across interactive elements */
+a, button, [role="button"], article, .group, [class*="rounded"] {
+  transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1efe9;
+}
+::-webkit-scrollbar-thumb {
+  background: #c59b27;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aa7f17;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Thin / Slim Scrollbar utility */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(197, 155, 39, 0.45) transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(197, 155, 39, 0.4);
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #c59b27;
+}

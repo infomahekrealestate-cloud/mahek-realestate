@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="mahekGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5bb42" />
+      <stop offset="50%" stop-color="#c59b27" />
+      <stop offset="100%" stop-color="#9a7413" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Gold Luxury Ring -->
+  <circle cx="256" cy="256" r="216" fill="none" stroke="url(#mahekGold)" stroke-width="36" />
+  
+  <!-- Geometric 'M' Facets -->
+  <g fill="url(#mahekGold)" stroke="url(#mahekGold)" stroke-width="4" stroke-linejoin="round">
+    <!-- Top-Left Peak -->
+    <polygon points="204,172 154,248 244,248" />
+    
+    <!-- Top-Right Peak -->
+    <polygon points="308,172 268,248 358,248" />
+    
+    <!-- Bottom Far-Left -->
+    <polygon points="152,262 104,338 196,338" />
+    
+    <!-- Bottom Mid-Left (inverted) -->
+    <polygon points="162,256 244,256 203,332" />
+    
+    <!-- Bottom Mid-Right (inverted) -->
+    <polygon points="268,256 350,256 309,332" />
+    
+    <!-- Bottom Far-Right -->
+    <polygon points="360,262 316,338 408,338" />
+  </g>
+</svg>

@@ -1,0 +1,332 @@
+[
+  {
+    "name": "custom.css",
+    "path": "/src/assets/images/custom.css",
+    "size": 2770
+  },
+  {
+    "name": "constants.js",
+    "path": "/src/assets/images/constants.js",
+    "size": 258
+  },
+  {
+    "name": "pubsub.js",
+    "path": "/src/assets/images/pubsub.js",
+    "size": 546
+  },
+  {
+    "name": "global.js",
+    "path": "/src/assets/images/global.js",
+    "size": 33932
+  },
+  {
+    "name": "details-disclosure.js",
+    "path": "/src/assets/images/details-disclosure.js",
+    "size": 1440
+  },
+  {
+    "name": "details-modal.js",
+    "path": "/src/assets/images/details-modal.js",
+    "size": 1554
+  },
+  {
+    "name": "search-form.js",
+    "path": "/src/assets/images/search-form.js",
+    "size": 994
+  },
+  {
+    "name": "animations.js",
+    "path": "/src/assets/images/animations.js",
+    "size": 2929
+  },
+  {
+    "name": "load_feature-1bd60354.js",
+    "path": "/src/assets/images/load_feature-1bd60354.js",
+    "size": 13938
+  },
+  {
+    "name": "base.css",
+    "path": "/src/assets/images/base.css",
+    "size": 66452
+  },
+  {
+    "name": "component-cart-items.css",
+    "path": "/src/assets/images/component-cart-items.css",
+    "size": 5000
+  },
+  {
+    "name": "radiocanadabig_n4.179cf677e3da4c1f20f4b1b5a9cdaa33d94514ac.woff2",
+    "path": "/src/assets/images/radiocanadabig_n4.179cf677e3da4c1f20f4b1b5a9cdaa33d94514ac.woff2",
+    "size": 11596
+  },
+  {
+    "name": "domine_n4.db7650f19fc5819add9c727a32f1ba7f15f89a56.woff2",
+    "path": "/src/assets/images/domine_n4.db7650f19fc5819add9c727a32f1ba7f15f89a56.woff2",
+    "size": 21748
+  },
+  {
+    "name": "component-predictive-search.css",
+    "path": "/src/assets/images/component-predictive-search.css",
+    "size": 4975
+  },
+  {
+    "name": "ESR_Logo_200x.jpg",
+    "path": "/src/assets/images/ESR_Logo_200x.jpg",
+    "size": 3860
+  },
+  {
+    "name": "31.jpg",
+    "path": "/src/assets/images/31.jpg",
+    "size": 5616
+  },
+  {
+    "name": "21.jpg",
+    "path": "/src/assets/images/21.jpg",
+    "size": 3473
+  },
+  {
+    "name": "52.jpg",
+    "path": "/src/assets/images/52.jpg",
+    "size": 4344
+  },
+  {
+    "name": "e1.jpg",
+    "path": "/src/assets/images/e1.jpg",
+    "size": 106432
+  },
+  {
+    "name": "interior-design_1.png",
+    "path": "/src/assets/images/interior-design_1.png",
+    "size": 8473
+  },
+  {
+    "name": "111.webp",
+    "path": "/src/assets/images/111.webp",
+    "size": 117158
+  },
+  {
+    "name": "construction.png",
+    "path": "/src/assets/images/construction.png",
+    "size": 5774
+  },
+  {
+    "name": "e2.jpg",
+    "path": "/src/assets/images/e2.jpg",
+    "size": 88976
+  },
+  {
+    "name": "blueprint.png",
+    "path": "/src/assets/images/blueprint.png",
+    "size": 9528
+  },
+  {
+    "name": "3_800x600.jpg",
+    "path": "/src/assets/images/3_800x600.jpg",
+    "size": 92819
+  },
+  {
+    "name": "jeffersons-lake-house_800x600.jpg",
+    "path": "/src/assets/images/jeffersons-lake-house_800x600.jpg",
+    "size": 2770
+  },
+  {
+    "name": "Screenshot_2025-09-12_134856_170b8efc-fcd0-41e0-8231-7eead09ac193_800x600.png",
+    "path": "/src/assets/images/Screenshot_2025-09-12_134856_170b8efc-fcd0-41e0-8231-7eead09ac193_800x600.png",
+    "size": 307090
+  },
+  {
+    "name": "2_800x600.jpg",
+    "path": "/src/assets/images/2_800x600.jpg",
+    "size": 81166
+  },
+  {
+    "name": "1_800x600.jpg",
+    "path": "/src/assets/images/1_800x600.jpg",
+    "size": 57075
+  },
+  {
+    "name": "11_800x600.webp",
+    "path": "/src/assets/images/11_800x600.webp",
+    "size": 89791
+  },
+  {
+    "name": "3_1200x.jpg",
+    "path": "/src/assets/images/3_1200x.jpg",
+    "size": 92819
+  },
+  {
+    "name": "2_1200x.jpg",
+    "path": "/src/assets/images/2_1200x.jpg",
+    "size": 81166
+  },
+  {
+    "name": "1_1200x.jpg",
+    "path": "/src/assets/images/1_1200x.jpg",
+    "size": 57075
+  },
+  {
+    "name": "Screenshot_2025-09-12_134856_170b8efc-fcd0-41e0-8231-7eead09ac193_1200x.png",
+    "path": "/src/assets/images/Screenshot_2025-09-12_134856_170b8efc-fcd0-41e0-8231-7eead09ac193_1200x.png",
+    "size": 307090
+  },
+  {
+    "name": "rate_120x120.png",
+    "path": "/src/assets/images/rate_120x120.png",
+    "size": 8324
+  },
+  {
+    "name": "environmental-classes_1_120x120.png",
+    "path": "/src/assets/images/environmental-classes_1_120x120.png",
+    "size": 14383
+  },
+  {
+    "name": "health-insurance_120x120.png",
+    "path": "/src/assets/images/health-insurance_120x120.png",
+    "size": 6286
+  },
+  {
+    "name": "exclusive_120x120.png",
+    "path": "/src/assets/images/exclusive_120x120.png",
+    "size": 11909
+  },
+  {
+    "name": "construction-engineer-examining-building-blueprint-SGA2NB9_large.jpg",
+    "path": "/src/assets/images/construction-engineer-examining-building-blueprint-SGA2NB9_large.jpg",
+    "size": 72527
+  },
+  {
+    "name": "beatiful-business-woman-engineer-wearing-orange-co-HC7JKCX_large.jpg",
+    "path": "/src/assets/images/beatiful-business-woman-engineer-wearing-orange-co-HC7JKCX_large.jpg",
+    "size": 42167
+  },
+  {
+    "name": "real-estate-logo_-construction-logo-design-template-b310fe1b6a68e267cdf318e8a9b2a0ad_screen.jpg",
+    "path": "/src/assets/images/real-estate-logo_-construction-logo-design-template-b310fe1b6a68e267cdf318e8a9b2a0ad_screen.jpg",
+    "size": 21719
+  },
+  {
+    "name": "excavator-working-on-sand-in-gear-design-9264ld.png",
+    "path": "/src/assets/images/excavator-working-on-sand-in-gear-design-9264ld.png",
+    "size": 22181
+  },
+  {
+    "name": "images_2.png",
+    "path": "/src/assets/images/images_2.png",
+    "size": 8187
+  },
+  {
+    "name": "pngtree-construction-logo-png-image_6066962.png",
+    "path": "/src/assets/images/pngtree-construction-logo-png-image_6066962.png",
+    "size": 6079
+  },
+  {
+    "name": "d017c361c04cbaf0032b3fcf6575952d.jpg",
+    "path": "/src/assets/images/d017c361c04cbaf0032b3fcf6575952d.jpg",
+    "size": 21736
+  },
+  {
+    "name": "17.jpg",
+    "path": "/src/assets/images/17.jpg",
+    "size": 5309
+  },
+  {
+    "name": "DASC_DascoDifference_Ambition_Icon_667827ff-c687-4536-8453-b2ed7cad1e36_100x100.svg",
+    "path": "/src/assets/images/DASC_DascoDifference_Ambition_Icon_667827ff-c687-4536-8453-b2ed7cad1e36_100x100.svg",
+    "size": 1579
+  },
+  {
+    "name": "DASC_DascoDifference_Purpose_Icon_daf5d44f-6755-4cd0-b48f-5fa7e5388d4e_100x100.svg",
+    "path": "/src/assets/images/DASC_DascoDifference_Purpose_Icon_daf5d44f-6755-4cd0-b48f-5fa7e5388d4e_100x100.svg",
+    "size": 3339
+  },
+  {
+    "name": "DASC_DascoDifference_OurValues_Icon_Excellence_80x80.svg",
+    "path": "/src/assets/images/DASC_DascoDifference_OurValues_Icon_Excellence_80x80.svg",
+    "size": 1870
+  },
+  {
+    "name": "DASC_DascoDifference_OurValues_Icon_Respect_80x80.svg",
+    "path": "/src/assets/images/DASC_DascoDifference_OurValues_Icon_Respect_80x80.svg",
+    "size": 1785
+  },
+  {
+    "name": "DASC_DascoDifference_OurValues_Icon_Partnership_80x80.svg",
+    "path": "/src/assets/images/DASC_DascoDifference_OurValues_Icon_Partnership_80x80.svg",
+    "size": 3689
+  },
+  {
+    "name": "DASC_DascoDifference_OurValues_Icon_Reliability_80x80.svg",
+    "path": "/src/assets/images/DASC_DascoDifference_OurValues_Icon_Reliability_80x80.svg",
+    "size": 1290
+  },
+  {
+    "name": "DASC_DascoDifference_OurValues_Icon_Safety_80x80.svg",
+    "path": "/src/assets/images/DASC_DascoDifference_OurValues_Icon_Safety_80x80.svg",
+    "size": 3000
+  },
+  {
+    "name": "elizabeth-favre-4e3a01fe645f44869b1f2a8aa21f3ab2_100x100.jpg",
+    "path": "/src/assets/images/elizabeth-favre-4e3a01fe645f44869b1f2a8aa21f3ab2_100x100.jpg",
+    "size": 4612
+  },
+  {
+    "name": "133_100x100.jpg",
+    "path": "/src/assets/images/133_100x100.jpg",
+    "size": 4208
+  },
+  {
+    "name": "Chris-Pratt_small.avif",
+    "path": "/src/assets/images/Chris-Pratt_small.avif",
+    "size": 4194
+  },
+  {
+    "name": "people-headshot-lindsay-kimble-9855440283c440159d1684a4befaa97d_100x100.jpg",
+    "path": "/src/assets/images/people-headshot-lindsay-kimble-9855440283c440159d1684a4befaa97d_100x100.jpg",
+    "size": 6589
+  },
+  {
+    "name": "ndimg-parallax-04-1024x683_720x.jpg",
+    "path": "/src/assets/images/ndimg-parallax-04-1024x683_720x.jpg",
+    "size": 100963
+  },
+  {
+    "name": "Screenshot_2025-09-12_134856_170b8efc-fcd0-41e0-8231-7eead09ac193_720x.png",
+    "path": "/src/assets/images/Screenshot_2025-09-12_134856_170b8efc-fcd0-41e0-8231-7eead09ac193_720x.png",
+    "size": 304287
+  },
+  {
+    "name": "3_720x.jpg",
+    "path": "/src/assets/images/3_720x.jpg",
+    "size": 103524
+  },
+  {
+    "name": "2_720x.jpg",
+    "path": "/src/assets/images/2_720x.jpg",
+    "size": 95047
+  },
+  {
+    "name": "1_720x.jpg",
+    "path": "/src/assets/images/1_720x.jpg",
+    "size": 100936
+  },
+  {
+    "name": "ndimg-parallax-04-1024x683.jpg",
+    "path": "/src/assets/images/ndimg-parallax-04-1024x683.jpg",
+    "size": 116469
+  },
+  {
+    "name": "section-contact-form.css",
+    "path": "/src/assets/images/section-contact-form.css",
+    "size": 572
+  },
+  {
+    "name": "Untitled_design_44.png",
+    "path": "/src/assets/images/Untitled_design_44.png",
+    "size": 1022830
+  },
+  {
+    "name": "predictive-search.js",
+    "path": "/src/assets/images/predictive-search.js",
+    "size": 6316
+  }
+]
