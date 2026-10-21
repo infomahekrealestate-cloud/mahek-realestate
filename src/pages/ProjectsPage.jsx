@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Building2, MapPin, ArrowRight, Filter, Search,
-  Compass, Eye, CheckCircle2, ChevronRight, ChevronDown, Layers, Home, Factory, Download, Send, Share2, ShieldCheck
+  Compass, Eye, CheckCircle2, ChevronRight, ChevronDown, Layers, Home, Factory, Download, Send, Share2
 } from 'lucide-react';
 import { projects } from '../data/projects';
 import ProjectEnquiryModal from '../components/ProjectEnquiryModal';
@@ -292,16 +292,6 @@ export default function ProjectsPage() {
                           {project.categoryLabel || project.category}
                         </span>
                       </div>
-
-                      {/* Standout Key USP Badge on Image */}
-                      {project.cardBadge && (
-                        <div className="absolute top-1.5 right-1.5 sm:top-3 sm:right-3 pointer-events-none">
-                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[8px] sm:text-[11px] font-bold bg-white/95 text-[#9a7210] border border-[#c59b27]/40 shadow-md backdrop-blur-md">
-                            <ShieldCheck className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#c59b27] shrink-0" />
-                            <span className="truncate max-w-[90px] min-[400px]:max-w-[120px] sm:max-w-none">{project.cardBadge}</span>
-                          </span>
-                        </div>
-                      )}
                     </div>
 
                     {/* Card Content (Refined side spacing for small screens) */}
