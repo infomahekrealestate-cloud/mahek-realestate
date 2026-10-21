@@ -163,7 +163,7 @@ export default function Hero({ onExploreProjects, onOpenContact: _onOpenContact 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3 md:gap-4">
 
             {/* Stat 1: Year Founded */}
-            <div className="card-hover-fx bg-white rounded-xl p-2.5 sm:p-3.5 md:p-4 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md group">
+            <div className="card-hover-fx bg-white rounded-xl p-2.5 sm:p-3.5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md group">
               <div className="flex justify-center mb-1.5 sm:mb-2">
                 <span className="p-1.5 sm:p-2 rounded-full bg-[#c59b27]/10 text-[#9a7210] group-hover:scale-110 transition-transform">
                   <Award className="w-4 h-4 sm:w-5 sm:h-5 text-[#c59b27]" />
