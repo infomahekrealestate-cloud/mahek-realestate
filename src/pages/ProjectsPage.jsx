@@ -293,6 +293,15 @@ export default function ProjectsPage() {
                         </span>
                       </div>
 
+                       {/* Standout Key USP Badge on Image */}
+                      {project.cardBadge && (
+                        <div className="absolute top-1.5 right-1.5 sm:top-3 sm:right-3 pointer-events-none">
+                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[8px] sm:text-[11px] font-bold bg-white/95 text-[#9a7210] border border-[#c59b27]/40 shadow-md backdrop-blur-md">
+                            <ShieldCheck className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#c59b27] shrink-0" />
+                            <span className="truncate max-w-[90px] min-[400px]:max-w-[120px] sm:max-w-none">{project.cardBadge}</span>
+                          </span>
+                        </div>
+                      )}
                       {/* Standout Key USP Badge on Image */}
                       {project.cardBadge && (
                         <div className="absolute top-1.5 right-1.5 sm:top-3 sm:right-3 pointer-events-none">
