@@ -166,7 +166,7 @@ export default function Hero({ onExploreProjects, onOpenContact: _onOpenContact 
             <div className="card-hover-fx bg-white rounded-xl p-2.5 sm:p-3.5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md group">
               <div className="flex justify-center mb-1.5 sm:mb-2">
                 <span className="p-1.5 sm:p-2 rounded-full bg-[#c59b27]/10 text-[#9a7210] group-hover:scale-110 transition-transform">
-                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-[#c59b27]" />
+                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-[#c59b27] " />
                 </span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold font-serif text-neutral-900 group-hover:text-[#9a7210] tracking-tight transition-colors">
