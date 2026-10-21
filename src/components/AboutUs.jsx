@@ -1,4 +1,5 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Award, ShieldCheck } from 'lucide-react';
+import founderImg from '../assets/images/builder_founder.jpg';
 
 export default function AboutUs({ onOpenContact }) {
   const pillars = [
@@ -25,10 +26,10 @@ export default function AboutUs({ onOpenContact }) {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#c59b27]/5 rounded-full blur-[160px] pointer-events-none"></div>
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-6">
-          
+
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900 tracking-tight">
             About <span className="gold-gradient-text">Mahek Real Estate</span>
           </h2>
@@ -37,14 +38,15 @@ export default function AboutUs({ onOpenContact }) {
           </p>
         </div>
 
+
         {/* ============================================================ */}
         {/* 3 CORPORATE PILLARS & STORY */}
         {/* ============================================================ */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
           {pillars.map((p) => (
-            <div 
+            <div
               key={p.num}
-              className="p-6 sm:p-7 rounded-2xl bg-white border border-[#c59b27]/25 hover:border-[#c59b27] transition-all duration-300 flex flex-col justify-between group hover:shadow-md"
+              className="card-hover-fx p-6 sm:p-7 rounded-2xl bg-white border border-[#c59b27]/25 hover:border-[#c59b27] flex flex-col justify-between group hover:shadow-md"
             >
               <div>
                 <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#c59b27]/10 border border-[#c59b27]/30 flex items-center justify-center text-base sm:text-lg font-bold text-[#9a7210] mb-4 group-hover:scale-105 transition-transform">

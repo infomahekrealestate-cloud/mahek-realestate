@@ -55,18 +55,18 @@ export default function BlogSection() {
           {filteredArticles.map((post) => (
             <article
               key={post.id}
-              className="group rounded-2xl overflow-hidden bg-white border border-[#c59b27]/25 hover:border-[#c59b27] transition-all duration-300 hover:shadow-[0_15px_35px_rgba(197,155,39,0.18)] hover:-translate-y-1 flex flex-col justify-between"
+              className="card-hover-fx group rounded-2xl overflow-hidden bg-white border border-[#c59b27]/25 hover:border-[#c59b27] hover:shadow-[0_15px_35px_rgba(197,155,39,0.18)] flex flex-col justify-between"
             >
               <div>
                 {/* Article Image Banner */}
                 <Link
                   to={`/blog/${post.id}`}
-                  className="block relative h-52 sm:h-56 overflow-hidden bg-neutral-900 group/img"
+                  className="block relative h-52 sm:h-56 overflow-hidden bg-neutral-900 group/img isolate"
                 >
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108 group-hover/img:scale-108"
+                    className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105 group-hover/img:scale-105 will-change-transform"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

@@ -28,7 +28,7 @@ export default function FaqSection({ onOpenContact }) {
     },
     {
       q: 'Where is Mahek Real Estate headquartered and how can we schedule a consultation?',
-      a: 'Our corporate headquarters is located at Mahek IT Park, Katargam, Opp. R.J.D Business Hub, Near Kiran Hospital, Surat - 395004, Gujarat, India. You can connect with our management team by calling +91 93777 44633, emailing infomahek2@gmail.com, or booking a private consultation.'
+      a: 'Our corporate headquarters is located at Mahek IT Park, Katargam, Opp. R.J.D Business Hub, Near Kiran Hospital, Surat - 395004, Gujarat, India. You can connect with our management team by calling +91 93777 44633, emailing info.mahekrealestate@gmail.com, or booking a private consultation.'
     }
   ];
 

@@ -155,7 +155,7 @@ function App() {
       />
 
       {/* Floating Chat & Scroll Actions */}
-      <FloatingActions onOpenContact={scrollToContact} />
+      <FloatingActions />
     </div>
   );
 }

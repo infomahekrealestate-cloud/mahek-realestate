@@ -45,7 +45,7 @@ export default function ProjectModal({ project, onClose, onOpenConsultation }) {
       targetUrl = knownPdfMap[project.id] || knownPdfMap[project.slug];
     }
     if (!targetUrl) {
-      targetUrl = '/Mahek-Group-Profile.pdf';
+      targetUrl = '/brochures/master-catalogue.pdf';
     }
 
     const cleanName = ((project && (project.name || project.title)) || 'Mahek_Group_Project').replace(/[^a-zA-Z0-9_-]/g, '_');

@@ -1,4 +1,3 @@
-
 # Logs
 logs
 *.log
@@ -8,31 +7,37 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-dist-ssr/
-build/
-out/
-
-# Environment variables and local files
-.env
-.env.*
-!.env.example
+node_modules
+dist
+dist-ssr
 *.local
+
+# Large archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Environment & Secret files
+.env
+.env.local
+.env.*.local
+
+# Temporary extraction & diff directories
+temp_master_raw/
+temp_pages/
+
+# Root and duplicate master catalogue copies (brochure lives in public/brochures/master-catalogue.pdf)
+/MASTER CATALOUGE.pdf
+/public/MASTER CATALOUGE.pdf
+/public/MASTER-CATALOUGE.pdf
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea/
+.idea
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-# Operating system files
-Thumbs.db

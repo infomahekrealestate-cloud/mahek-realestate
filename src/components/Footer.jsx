@@ -218,22 +218,7 @@ export default function Footer({ onOpenContact }) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-[#c59b27] flex-shrink-0" />
-                  <a href="mailto:infomahek2@gmail.com" className="hover:text-[#9a7210] transition-colors">infomahek2@gmail.com</a>
-                </div>
-
-                <div className="sm:col-span-2 lg:col-span-1 pt-1.5">
-                  <button
-                    onClick={() => {
-                      if (location.pathname === '/') {
-                        if (onOpenContact) onOpenContact();
-                      } else {
-                        navigate('/#contact');
-                      }
-                    }}
-                    className="w-full py-2 rounded-xl border-2 border-[#c59b27] text-[#9a7210] hover:bg-[#c59b27] hover:text-white hover:shadow-md font-bold text-xs uppercase tracking-wider transition-all bg-white cursor-pointer"
-                  >
-                    Enquire Now
-                  </button>
+                  <a href="mailto:info.mahekrealestate@gmail.com" className="hover:text-[#9a7210] transition-colors">info.mahekrealestate@gmail.com</a>
                 </div>
               </div>
             </div>

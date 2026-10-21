@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   X, Check, Copy, Share2, ExternalLink,
-  Sparkles, Building2, BookOpen
+  Building2, BookOpen
 } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 

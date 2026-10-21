@@ -59,42 +59,40 @@ export default function ClientsSection() {
   ];
 
   return (
-    <section id="clients" className="py-6 md:py-8 bg-white border-y border-[#c59b27]/20 relative overflow-hidden">
+    <section id="clients" className="py-3 sm:py-4 md:py-5 bg-white border-y border-[#c59b27]/20 relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header: Matching 'Our Developer Family' Theme */}
-        <div className="text-center mb-5 sm:mb-7">
-        
-          
+        <div className="text-center mb-3 sm:mb-4">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-neutral-900 tracking-tight">
             Our <span className="gold-gradient-text">Developer Family</span>
           </h2>
           
-          <p className="mt-1.5 text-xs sm:text-sm md:text-base text-neutral-600 max-w-2xl mx-auto">
+          <p className="mt-1 text-xs sm:text-sm md:text-base text-neutral-600 max-w-2xl mx-auto">
             Strategic alliances and consortium partners collaborating with Mahek Group across Gujarat's premier industrial, commercial, and residential developments.
           </p>
         </div>
 
         {/* 8-Partner Developer Grid (2 cols on mobile, 4 cols on tablet & desktop) */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 items-stretch">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 lg:gap-3.5 items-stretch">
           {partners.map((partner) => (
             <div
               key={partner.id}
-              className="group p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-white border border-[#c59b27]/25 hover:border-[#c59b27] transition-all duration-300 flex flex-col items-center justify-between min-h-[140px] sm:min-h-[170px] hover:shadow-[0_12px_30px_rgba(197,155,39,0.18)] hover:-translate-y-1 cursor-default"
+              className="card-hover-fx group px-2 sm:px-3 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl bg-white border border-[#c59b27]/25 hover:border-[#c59b27] flex flex-col items-center justify-between hover:shadow-[0_10px_25px_rgba(197,155,39,0.16)] cursor-default"
             >
-              {/* Logo Area */}
-              <div className="w-full flex-1 flex items-center justify-center p-2 bg-neutral-50/60 rounded-xl border border-neutral-100 group-hover:bg-white group-hover:border-[#c59b27]/20 transition-all duration-300">
+              {/* Logo Area (Compact top/bottom padding, large clear logo) */}
+              <div className="w-full flex-1 flex items-center justify-center py-1 sm:py-1.5 px-2 bg-neutral-50/70 rounded-lg sm:rounded-xl border border-neutral-100 group-hover:bg-white group-hover:border-[#c59b27]/25 transition-all duration-300">
                 <img
                   src={partner.img}
                   alt={partner.alt}
-                  className="max-h-12 sm:max-h-14 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="h-12 sm:h-16 md:h-18 max-h-[60px] sm:max-h-[72px] w-auto max-w-[94%] object-contain group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
               </div>
 
               {/* Title & Role */}
-              <div className="w-full pt-2 sm:pt-2.5 text-center">
-                <p className="text-xs sm:text-sm font-bold text-neutral-900 group-hover:text-[#9a7210] transition-colors truncate">
+              <div className="w-full pt-1 sm:pt-1.5 text-center">
+                <p className="text-xs sm:text-sm font-bold text-neutral-900 group-hover:text-[#9a7210] transition-colors truncate leading-tight">
                   {partner.name}
                 </p>
                 <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-neutral-500 font-semibold truncate mt-0.5">

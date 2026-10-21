@@ -7,7 +7,9 @@
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server/server.js",
+    "test:smtp": "node scripts/test_smtp.js"
   },
   "dependencies": {
     "dotenv": "^18.0.8",

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { X, CheckCircle, Send, Phone, Mail, User, MessageSquare, Building2, Calendar, FileText, Download, AlertCircle } from 'lucide-react';
 import { sendLeadEnquiry } from '../services/enquiryService';
 import WhatsAppIcon from './WhatsAppIcon';
+import advisorImg from '../assets/images/people/kavita-sharma.jpg';
 
 export default function ProjectEnquiryModal({
   isOpen,
@@ -125,7 +126,7 @@ export default function ProjectEnquiryModal({
       targetUrl = knownPdfMap[project.id] || knownPdfMap[project.slug];
     }
     if (!targetUrl) {
-      targetUrl = '/Mahek-Group-Profile.pdf';
+      targetUrl = '/brochures/master-catalogue.pdf';
     }
 
     const cleanName = ((project.name || project.title) || 'Mahek_Group_Project').replace(/[^a-zA-Z0-9_-]/g, '_');
@@ -287,7 +288,7 @@ export default function ProjectEnquiryModal({
                     <span>⚠️ Form Activation Required</span>
                   </p>
                   <p className="leading-relaxed">
-                    FormSubmit has sent a 1-time activation email to <strong>cse.22084013125@gmail.com</strong>.
+                    FormSubmit has sent a 1-time activation email to <strong>info.mahekrealestate@gmail.com</strong>.
                     Please check your Gmail inbox/spam and click <strong>"Activate Form"</strong> to start receiving all leads directly in your email.
                   </p>
                 </div>
@@ -318,6 +319,23 @@ export default function ProjectEnquiryModal({
                   {errorMessage}
                 </div>
               )}
+
+              {/* Indian Advisor Quick Banner
+              <div className="p-2 sm:p-2.5 rounded-xl bg-[#faf8f2] border border-[#c59b27]/30 flex items-center gap-2.5 sm:gap-3 shadow-2xs">
+                <img
+                  src={advisorImg}
+                  alt="Kavita Sharma - Senior Project Advisor"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border border-[#c59b27]/60 shrink-0 shadow-xs"
+                />
+                <div className="min-w-0 flex-1">
+                  <p className="text-[11px] sm:text-xs font-bold text-neutral-900 leading-tight">
+                    Dedicated Advisory — <span className="text-[#9a7210]">Kavita Sharma</span>
+                  </p>
+                  <p className="text-[10px] text-neutral-500 truncate">
+                    Senior Project Advisor, Surat Corporate HQ
+                  </p>
+                </div>
+              </div> */}
 
               {/* Inquiry Type Selector - 1 Compact Row */}
               <div>

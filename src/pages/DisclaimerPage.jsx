@@ -234,8 +234,8 @@ export default function DisclaimerPage() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#c59b27] shrink-0" />
-                <a href="mailto:infomahek2@gmail.com" className="text-[#9a7210] hover:underline font-semibold">
-                  infomahek2@gmail.com
+                <a href="mailto:info.mahekrealestate@gmail.com" className="text-[#9a7210] hover:underline font-semibold">
+                  info.mahekrealestate@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2.5">

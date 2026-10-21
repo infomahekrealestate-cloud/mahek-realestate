@@ -13,7 +13,7 @@ export function buildLeadEmailHtml({ name, phone, email, interest, project, mess
   return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0c0a09; color: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #d4af37;">
       <div style="border-bottom: 2px solid #d4af37; padding-bottom: 12px; margin-bottom: 20px;">
-        <h2 style="color: #fbe285; margin: 0; font-size: 20px; font-weight: bold;">✨ New Mahek Real Estate Consultation Lead</h2>
+        <h2 style="color: #fbe285; margin: 0; font-size: 20px; font-weight: bold;">New Mahek Real Estate Consultation Lead</h2>
         <p style="color: #a8a29e; font-size: 12px; margin: 4px 0 0 0;">Received from Website (${source})</p>
       </div>
       
@@ -66,8 +66,8 @@ export async function sendEnquiryEmail(payload) {
   const smtpHost = process.env.SMTP_HOST || 'smtp.gmail.com';
   const smtpPort = process.env.SMTP_PORT || 587;
   const smtpUser = process.env.SMTP_USER;
-  const smtpPass = process.env.SMTP_PASS;
-  const recipientEmail = process.env.ENQUIRY_RECIPIENT_EMAIL || 'cse.22084013125@gmail.com';
+  const smtpPass = (process.env.SMTP_PASS || '').trim().replace(/\s+/g, '');
+  const recipientEmail = process.env.ENQUIRY_RECIPIENT_EMAIL || smtpUser || 'info.mahekrealestate@gmail.com';
 
   if (!smtpUser || !smtpPass) {
     return {
@@ -77,18 +77,35 @@ export async function sendEnquiryEmail(payload) {
     };
   }
 
-  const transporter = nodemailer.createTransport({
-    host: smtpHost,
-    port: Number(smtpPort),
-    secure: Number(smtpPort) === 465,
-    auth: {
-      user: smtpUser,
-      pass: smtpPass
-    }
-  });
+  const isGmail = (smtpHost || '').toLowerCase().includes('gmail');
+  const portNum = Number(smtpPort) || (isGmail ? 465 : 587);
+  const isSecure = portNum === 465;
+
+  const transportOptions = isGmail && portNum === 465
+    ? {
+        service: 'gmail',
+        auth: {
+          user: smtpUser.trim(),
+          pass: smtpPass
+        }
+      }
+    : {
+        host: smtpHost.trim(),
+        port: portNum,
+        secure: isSecure,
+        auth: {
+          user: smtpUser.trim(),
+          pass: smtpPass
+        },
+        tls: {
+          rejectUnauthorized: false
+        }
+      };
+
+  const transporter = nodemailer.createTransport(transportOptions);
 
   const mailHtml = buildLeadEmailHtml(payload);
-  const mailSubject = `✨ New Mahek Real Estate Lead: ${payload.name} (${payload.project || 'General Enquiry'})`;
+  const mailSubject = `[NEW LEAD] ${payload.name} - ${payload.project || 'General Enquiry'}`;
 
   await transporter.sendMail({
     from: `"Mahek Real Estate Portal" <${smtpUser}>`,
@@ -98,5 +115,54 @@ export async function sendEnquiryEmail(payload) {
     html: mailHtml
   });
 
-  return { success: true };
+  return { success: true, recipient: recipientEmail };
 }
+
+/**
+ * Validates connection to the configured SMTP server
+ */
+export async function verifySmtpConnection() {
+  const smtpHost = process.env.SMTP_HOST || 'smtp.gmail.com';
+  const smtpPort = process.env.SMTP_PORT || 587;
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = (process.env.SMTP_PASS || '').trim().replace(/\s+/g, '');
+
+  if (!smtpUser || !smtpPass) {
+    return { success: false, error: 'SMTP_USER or SMTP_PASS missing in .env' };
+  }
+
+  const isGmail = (smtpHost || '').toLowerCase().includes('gmail');
+  const portNum = Number(smtpPort) || (isGmail ? 465 : 587);
+  const isSecure = portNum === 465;
+
+  const transportOptions = isGmail && portNum === 465
+    ? {
+        service: 'gmail',
+        auth: {
+          user: smtpUser.trim(),
+          pass: smtpPass
+        }
+      }
+    : {
+        host: smtpHost.trim(),
+        port: portNum,
+        secure: isSecure,
+        auth: {
+          user: smtpUser.trim(),
+          pass: smtpPass
+        },
+        tls: {
+          rejectUnauthorized: false
+        }
+      };
+
+  const transporter = nodemailer.createTransport(transportOptions);
+
+  try {
+    await transporter.verify();
+    return { success: true, host: smtpHost, user: smtpUser };
+  } catch (err) {
+    return { success: false, error: err.message };
+  }
+}
+

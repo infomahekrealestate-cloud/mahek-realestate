@@ -11,7 +11,7 @@ export const EMAIL_CONFIG = {
   accessKey: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE',
 
   // Default corporate email
-  recipientEmail: 'cse.22084013125@gmail.com',
+  recipientEmail: 'info.mahekrealestate@gmail.com',
 
   // Email subject line for incoming messages
   emailSubject: 'New Lead: Mahek Real Estate Website Enquiry'

@@ -129,7 +129,7 @@ export default function ProjectDetailModal({
       targetUrl = knownPdfMap[project.id] || knownPdfMap[project.slug];
     }
     if (!targetUrl) {
-      targetUrl = '/Mahek-Group-Profile.pdf';
+      targetUrl = '/brochures/master-catalogue.pdf';
     }
 
     const cleanName = (projectName || 'Mahek_Group_Project').replace(/[^a-zA-Z0-9_-]/g, '_');
@@ -564,7 +564,7 @@ export default function ProjectDetailModal({
                       {currentLayoutTitle || 'Master Layout Plan'}
                     </h3>
                     <p className="text-xs text-neutral-500 max-w-xl mt-1">
-                      {currentLayoutDesc || 'Exact architectural blueprint extracted directly from Mahek Real Estate Profile.pdf.'}
+                      {currentLayoutDesc || 'Exact architectural blueprint extracted directly from Mahek Real Estate Master Catalogue.'}
                     </p>
                   </div>
 

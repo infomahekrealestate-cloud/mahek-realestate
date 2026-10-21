@@ -1,12 +1,26 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
-import { sendEnquiryEmail } from './server/mailer.js';
+import { sendEnquiryEmail, verifySmtpConnection } from './server/mailer.js';
 
 function enquiryApiPlugin() {
   return {
     name: 'enquiry-api-plugin',
     configureServer(server) {
+      // SMTP Test & Health Check Endpoint
+      server.middlewares.use('/api/test-smtp', async (req, res) => {
+        res.setHeader('Content-Type', 'application/json');
+        try {
+          const result = await verifySmtpConnection();
+          res.statusCode = result.success ? 200 : 400;
+          res.end(JSON.stringify(result));
+        } catch (err) {
+          res.statusCode = 500;
+          res.end(JSON.stringify({ success: false, error: err.message }));
+        }
+      });
+
+      // Lead Dispatch Endpoint
       server.middlewares.use('/api/enquiry', async (req, res) => {
         if (req.method === 'POST') {
           let body = '';
@@ -22,7 +36,7 @@ function enquiryApiPlugin() {
               res.setHeader('Content-Type', 'application/json');
               if (result.success) {
                 res.statusCode = 200;
-                res.end(JSON.stringify({ success: true, method: 'smtp' }));
+                res.end(JSON.stringify({ success: true, method: 'smtp', recipient: result.recipient }));
               } else {
                 res.statusCode = result.needsConfig ? 428 : 500;
                 res.end(JSON.stringify(result));

@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import avatar1 from '../assets/images/31.jpg';
-import avatar2 from '../assets/images/elizabeth-favre-4e3a01fe645f44869b1f2a8aa21f3ab2_100x100.jpg';
-import avatar3 from '../assets/images/people-headshot-lindsay-kimble-9855440283c440159d1684a4befaa97d_100x100.jpg';
-import avatar4 from '../assets/images/Chris-Pratt_small.avif';
-import avatar5 from '../assets/images/17.jpg';
-import avatar6 from '../assets/images/52.jpg';
+import avatar1 from '../assets/images/people/rajesh-patel.jpg';
+import avatar2 from '../assets/images/people/arun-singhania.jpg';
+import avatar3 from '../assets/images/people/pooja-shah.jpg';
+import avatar4 from '../assets/images/people/dr-sanjay-mehta.jpg';
+import avatar5 from '../assets/images/people/harshvardhan-kothari.jpg';
+import avatar6 from '../assets/images/people/deepak-jariwala.jpg';
 
 export default function Testimonials() {
   const testimonials = [
@@ -201,7 +201,7 @@ export default function Testimonials() {
                 {pair.map((t, cardIdx) => (
                   <div
                     key={`${t.id}-${pIdx}-${cardIdx}`}
-                    className="p-6 sm:p-7 rounded-2xl bg-white border border-[#c59b27]/25 hover:border-[#c59b27] hover:shadow-[0_15px_35px_-10px_rgba(197,155,39,0.2)] transition-all duration-300 flex flex-col justify-between"
+                    className="card-hover-fx p-6 sm:p-7 rounded-2xl bg-white border border-[#c59b27]/25 hover:border-[#c59b27] hover:shadow-[0_15px_35px_-10px_rgba(197,155,39,0.2)] flex flex-col justify-between"
                   >
                     <div>
                       {/* Top Row: Stars + Quote Icon */}

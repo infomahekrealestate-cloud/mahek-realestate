@@ -245,9 +245,9 @@ export default function Navbar({ onOpenContact: _onOpenContact, onOpenSearch }) 
               <Phone className="w-3.5 h-3.5 text-[#c59b27]" />
               <span>+91 93777 44633 / +91 75674 41177</span>
             </a>
-            <a href="mailto:infomahek2@gmail.com" className="flex items-center gap-2 font-semibold text-neutral-800 hover:text-[#9a7210]">
+            <a href="mailto:info.mahekrealestate@gmail.com" className="flex items-center gap-2 font-semibold text-neutral-800 hover:text-[#9a7210]">
               <Mail className="w-3.5 h-3.5 text-[#c59b27]" />
-              <span>infomahek2@gmail.com</span>
+              <span>info.mahekrealestate@gmail.com</span>
             </a>
             <div className="flex items-center gap-2 text-neutral-600 text-[11px]">
               <Clock className="w-3.5 h-3.5 text-[#c59b27]" />

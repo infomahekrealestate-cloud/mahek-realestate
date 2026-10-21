@@ -47,7 +47,7 @@ export const allProjectsData = [
     sqft: '9-Story Edifice',
     price: 'Diwali 2024 Milestone',
     image: imgHilton,
-    pdfUrl: '/Mahek-Group-Profile.pdf',
+    pdfUrl: '/brochures/master-catalogue.pdf',
     featured: true,
     highlights: [
       "First Hilton Garden Inn in the State of Gujarat",
@@ -71,7 +71,7 @@ export const allProjectsData = [
     sqft: '350 - 5,000 sq.ft',
     price: 'Prime Retail & Office',
     image: imgIcon,
-    pdfUrl: '/Mahek-Group-Profile.pdf',
+    pdfUrl: '/brochures/master-catalogue.pdf',
     featured: true,
     highlights: [
       'Prime location on busy Sumul Dairy Road corridor',
@@ -95,7 +95,7 @@ export const allProjectsData = [
     sqft: 'Custom Industrial Floorplates',
     price: 'Industrial Infrastructure',
     image: imgDiamondPark,
-    pdfUrl: '/Mahek-Group-Profile.pdf',
+    pdfUrl: '/brochures/master-catalogue.pdf',
     featured: true,
     highlights: [
       "Custom-built for Surat's world-class diamond processing industry",
@@ -119,7 +119,7 @@ export const allProjectsData = [
     sqft: 'Expansive Industrial Campus',
     price: 'Global Textile Export',
     image: imgTextilePark,
-    pdfUrl: '/Mahek-Group-Profile.pdf',
+    pdfUrl: '/brochures/master-catalogue.pdf',
     featured: false,
     highlights: [
       'Annual capacity exceeding 25 Million meters of PP non-woven fabric',
@@ -191,7 +191,7 @@ export const allProjectsData = [
     sqft: 'GMP Compliant Facility',
     price: 'Pharma Division',
     image: imgPharma,
-    pdfUrl: '/Mahek-Group-Profile.pdf',
+    pdfUrl: '/brochures/master-catalogue.pdf',
     featured: false,
     highlights: [
       'Key synthesis intermediate CMH & R CMH production',

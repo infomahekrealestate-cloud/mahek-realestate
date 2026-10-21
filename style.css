@@ -69,23 +69,41 @@
 }
 
 .luxury-card:hover {
-  border-color: rgba(197, 155, 39, 0.6);
-  transform: translateY(-4px);
+  border-color: rgba(197, 155, 39, 0.7);
   box-shadow: 0 20px 40px -10px rgba(197, 155, 39, 0.18), 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* ============================================================
-   GLOBAL BOX-SHADOW CONTROL:
-   Remove all resting box shadows across the website.
-   Box shadows are displayed exclusively on hover, focus, or active interaction.
+   HIGH-PERFORMANCE CARD HOVER (ZERO BORDER JITTER & ZERO LAG)
+   Stationary hit geometry ensures 100% stable border hover
+   with zero boundary chattering, flicker, or animation lag.
    ============================================================ */
-*:not(:hover):not(:focus):not(:focus-visible):not(:focus-within):not(:active):not(:is(.group:hover *)):not(:is(.group:focus-within *)):not([role="dialog"]):not([role="dialog"] *) {
-  box-shadow: none !important;
+.card-hover-fx {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: box-shadow, border-color;
+  transition: box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease-out;
 }
 
-/* Ensure smooth transition for hover shadows across interactive elements */
-a, button, [role="button"], article, .group, [class*="rounded"] {
-  transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+.card-hover-fx:hover {
+  border-color: rgba(197, 155, 39, 0.85);
+  box-shadow: 0 16px 36px -8px rgba(197, 155, 39, 0.22), 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+/* Hardware accelerated image scaling within cards */
+.card-hover-fx img,
+.group img {
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Ensure smooth transition for interactive buttons & links */
+a, button, [role="button"] {
+  transition-property: color, background-color, border-color, opacity, box-shadow;
 }
 
 /* Custom Scrollbar */

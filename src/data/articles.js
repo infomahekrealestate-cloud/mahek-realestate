@@ -1,6 +1,9 @@
-import hiltonImg from '../assets/images/ndimg-parallax-04-1024x683.jpg';
-import textileImg from '../assets/images/111.webp';
-import pharmaImg from '../assets/images/e1.jpg';
+import newsHilton from '../assets/images/people/news-hilton.jpg';
+import newsLogistics from '../assets/images/people/news-logistics.jpg';
+import newsItPark from '../assets/images/people/mahek-it-park-official.jpg';
+import differenceGlobal from '../assets/images/people/difference-global.jpg';
+import drSanjayMehta from '../assets/images/people/dr-sanjay-mehta.jpg';
+import newsAmPark from '../assets/images/people/the-am-park-official.jpg';
 
 export const articleCategories = [
   { id: 'All', label: 'All News (6)' },
@@ -19,7 +22,7 @@ export const articles = [
     author: 'Mahek Hospitality & Hilton Worldwide',
     category: 'Hospitality',
     categoryBadge: 'Hospitality Alliances',
-    image: hiltonImg,
+    image: newsHilton,
     excerpt: 'In 2019, Mahek Real Estate collaborated with Hilton Worldwide to develop one of Gujarat’s first Hiltons. A magnificent 9-story luxury edifice featuring 104 guest rooms, Together & Co. dining, and 3 expansive ballrooms.',
     fullStory: [
       'In 2019, Mahek Real Estate with a consortium of esteemed partners embarked on a transformative journey by collaborating with the world-renowned Hilton Worldwide brand. The outcome is Gujarat’s first Hilton Garden Inn, situated steps from Surat Railway Station in the central city precinct.',
@@ -43,7 +46,7 @@ export const articles = [
     author: 'SG Maruti Developers & Mahek Real Estate',
     category: 'Industrial & Real Estate',
     categoryBadge: 'Highway Logistics',
-    image: '/projects/the-mahek-park-1/hero.png',
+    image: newsLogistics,
     excerpt: 'Directly positioned onto the 200 ft wide National Highway 48 near Ladvi Gurukul, this approved master-planned development provides wide RCC roads, heavy utilities, and government warehouse policy subsidies.',
     fullStory: [
       'The Mahek Park-1 represents a flagship collaborative venture between Mahek Real Estate and SG Maruti Developers. Strategically positioned directly along National Highway 48 near Ladvi Gurukul in Umbhel / Umrakh, this plotted industrial park addresses the critical demand for heavy logistics hubs in South Gujarat.',
@@ -67,21 +70,22 @@ export const articles = [
     author: 'Mahek Realty & Parshwa Group',
     category: 'Industrial & Real Estate',
     categoryBadge: 'Commercial IT Hub',
-    image: '/projects/mahek-it-park/hero.png',
-    excerpt: 'Prime multi-story commercial and technology park in Katargam, Surat. Housing corporate chambers, tech firms, financial institutions, and retail showrooms with multi-level basement parking.',
+    image: newsItPark,
+    excerpt: 'Government Approved 1st I.T. Park In Surat. Showrooms on lease with leading brands, offices and commercial spaces with 16ft floor height and five levels of parking on Sumul Dairy Road, Katargam.',
     fullStory: [
-      'Situated directly opposite R.J.D Business Hub and minutes from Kiran Multispeciality Hospital in Katargam, Mahek I.T. Park stands as the corporate headquarters of Mahek Real Estate and an epicenter for business growth.',
-      'The state-of-the-art complex features prime ground-floor retail showrooms, multi-story corporate chambers, high-speed optical fiber infrastructure, and 24/7 power backup systems.',
-      'Built with earthquake-resistant structural engineering and expansive multi-tier basement parking, the development is ideally configured for IT/ITES companies, chartered accounting firms, diamond offices, and enterprise headquarters.'
+      'Mahek I.T. Park stands as the landmark Government Approved 1st I.T. Park in Surat. Developed in partnership by Mahek Real Estate and Parshwa Group, the landmark complex is situated beside R.J.D Complex and near Kiran Hospital on Sumul Dairy Road in Katargam, Surat (395004).',
+      'Engineered to meet international corporate standards, the development offers double-height showrooms on lease with top retail brands, state-of-the-art office spaces, and specialized commercial chambers tailored for tech firms, banks, chartered accountants, and diamond trading offices.',
+      'With an extraordinary 16-foot floor height that delivers generous volume and natural illumination, combined with five comprehensive levels of structured parking and high-speed elevators, Mahek I.T. Park establishes a new standard for corporate infrastructure in Gujarat.'
     ],
     highlights: [
-      'Corporate Headquarters of Mahek Real Estate',
-      'Situated opposite R.J.D Business Hub on Naginawadi Road',
-      'High-speed optical fiber connectivity & 24/7 power backup',
-      'Multi-level basement parking with two-way vehicular ramps',
-      'High-street retail showrooms with maximum road frontage'
+      'Government Approved 1st I.T. Park in Surat',
+      'Showrooms on lease with brands & corporate office spaces',
+      '16-Foot monumental floor height on commercial levels',
+      'Five comprehensive levels of structured parking',
+      'Beside R.J.D Complex, Near Kiran Hospital, Sumul Dairy Road',
+      'Dedicated leasing helplines: +91 81414 13152 | +91 93777 44633'
     ],
-    milestone: 'Operational Flagship Commercial Asset'
+    milestone: 'Govt. Approved 1st I.T. Park'
   },
   {
     id: 4,
@@ -91,7 +95,7 @@ export const articles = [
     author: 'SCAP Techno Fab Pvt. Ltd.',
     category: 'Manufacturing & Textiles',
     categoryBadge: 'Technical Textiles',
-    image: textileImg,
+    image: differenceGlobal,
     excerpt: 'Founded in 2008 and scaling into manufacturing by 2011, SCAP Group surpasses 25 Million meters of high-tensile polypropylene non-woven fabric output annually with ISO 9001:2015 certification.',
     fullStory: [
       'SCAP Techno Fab Pvt. Ltd. (Scap Group), a proud manufacturing division of Mahek Real Estate, marks a landmark operational achievement by surpassing 25 Million meters in annual polypropylene spunbond non-woven fabric production.',
@@ -115,7 +119,7 @@ export const articles = [
     author: 'Mahek Life Science Division',
     category: 'Pharmaceuticals',
     categoryBadge: 'Pharmaceutical APIs',
-    image: pharmaImg,
+    image: drSanjayMehta,
     excerpt: 'Advancing India’s active pharmaceutical ingredient (API) supply chain through dedicated cGMP manufacturing of critical chemical intermediates CMH and R CMH for Pregabaline synthesis.',
     fullStory: [
       'Mahek Life Science, the specialized chemical and pharmaceutical arm of Mahek Real Estate, has expanded its manufacturing footprint for high-purity chemical intermediates CMH and R CMH.',
@@ -138,22 +142,23 @@ export const articles = [
     date: '2024 - 2025',
     author: 'Mahek Consortium & Angel Group',
     category: 'Industrial & Real Estate',
-    categoryBadge: 'Plotted Industrial Estates',
-    image: '/projects/the-am-park/hero.png',
-    excerpt: 'Delivering comprehensive industrial plotting with wide 40ft/60ft heavy RCC roads, dedicated high-tension 3-phase power, underground drainage, and proximity to regional transport corridors.',
+    categoryBadge: 'Commercial & Industrial',
+    image: newsAmPark,
+    excerpt: 'The Right Growth Starts With The Right Location. The AM Park delivers Surat’s premier G+2 commercial landmark for showrooms, hospitals, shops, and corporate offices at Bapa Sitaram Chowk on the 45-meter wide Simada-BRTS corridor.',
     fullStory: [
-      'In continued expansion of South Gujarat’s industrial infrastructure, Mahek Real Estate in collaboration with Angel Group and SG Maruti Developers presents The AM Park and Orange Mahek Park.',
-      'These twin plotted industrial estates have been master-planned to provide small, medium, and heavy enterprise owners with clear-title industrial plots ready for immediate shed construction.',
-      'Featuring underground drainage lines, dedicated street lighting, high-tension industrial power feeder lines, and seamless highway access, these estates offer unbeatable logistical convenience for textile, chemical, and engineering units.'
+      'The AM Park stands as an iconic architectural milestone brought to life by Angel Group, Mahek Real Estate, and SG Maruti Developers. Strategically positioned at Bapa Sitaram Chowk, beside MBH-3 and directly opposite Silver Business Hub on the bustling Simada-BRTS Road corridor in Surat, the development operates under the guiding principle: "The Right Growth Starts With The Right Location".',
+      'As Surat’s first and only low-rise G+2 mega complex, the property features a monumental 21-foot ground floor showroom ceiling height, 13-foot first-floor commercial suites, 19.5-foot second-floor lofts, and a full 15-foot high basement parking level with dual ingress/egress ramps.',
+      'Approved for multi-speciality hospitals, flagship retail showrooms, and corporate headquarters, the complex commands over 45 meters of direct BRTS road frontage and stands alongside Orange Mahek Park in expanding the consortium’s commercial and industrial footprint across Gujarat.'
     ],
     highlights: [
-      'Approved master-planned plotted industrial developments',
-      'Wide 40 ft., 50 ft. and 60 ft. heavy RCC internal road network',
-      'Underground drainage and high-tension electrical grid',
-      'Direct access to major regional transit corridors and highways',
-      'Flexible industrial plot configurations from 500 sq.yd. upwards'
+      '“The Right Growth Starts With The Right Location”',
+      'Prime location at Bapa Sitaram Chowk, Beside MBH-3, Opp. Silver Business Hub',
+      'Massive 45.00-meter wide Simada-BRTS road corridor frontage',
+      'Approved for Flagship Showrooms, Hospitals, Shops & Corporate Offices',
+      'Monumental 21 Ft. ground floor showroom height & 15 Ft. basement parking',
+      'First-of-its-kind G+2 architectural elevation with iconic landmark pin'
     ],
-    milestone: 'Clear Title Industrial Plots Available'
+    milestone: 'Landmark Commercial & Industrial Destination'
   }
 ];
 

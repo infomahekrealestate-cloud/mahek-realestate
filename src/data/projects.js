@@ -1,7 +1,7 @@
 /**
  * Mahek Real Estate Projects Data
- * Extracted directly from Mahek Real Estate Profile.pdf
- * Source of Truth: Brochure Pages 2 to 11
+ * Extracted directly from MASTER CATALOUGE.pdf
+ * Source of Truth: MASTER CATALOUGE Pages 2 to 11
  */
 import { allProjectsData } from './projectsData';
 
@@ -13,7 +13,7 @@ export const projects = [
     category: 'Industrial',
     categoryLabel: 'Industrial / Plotted Development',
     developerPartners: 'SG Maruti Developers & Mahek Real Estate',
-    tagline: 'હવે, વ્યવસાય બનશે વધુ સરળ, વિકસીત અને સમૃદ્ધ !',
+    tagline: 'તમારા વ્યવસાયને મળશે નવી જગ્યા, નવી ગતિ અને નવી ઊંચાઈ!',
     taglineEn: 'The Only Industrial Project with the Best Infrastructure on the National Highway',
     location: 'National Highway No. 48, near Ladvi Gurukul, Umrakh, Gujarat',
     address: 'National Highway No.48, B/H. Ladvi Gurukul, Umbhel (Umrakh), Surat, Gujarat',
@@ -26,6 +26,12 @@ export const projects = [
     layoutPlan: '/projects/the-mahek-park-1/layout_plan.png',
     layoutTitle: 'Industrial Plotted Master Layout Plan',
     layoutDescription: 'Comprehensive master plan showcasing over 100 industrial plots with direct highway frontage, 100-foot and 60-foot main logistics avenues, and 33-foot internal feeder roads.',
+    cardBadge: '200 Ft. NH-48 Frontage',
+    keyUspList: [
+      '200 Ft. Wide NH-48 Highway Frontage',
+      '100 Ft. & 60 Ft. Heavy RCC Roads',
+      'Statutory Approved Industrial Layout Plan'
+    ],
     highlights: [
       'Direct 200 Ft. Wide National Highway No. 48 Frontage',
       'Industrial Layout Approved (ઈન્ડસ્ટ્રીયલ પ્લાન પાસ)',
@@ -63,7 +69,9 @@ export const projects = [
       { title: 'Official Brochure Cover', url: '/projects/the-mahek-park-1/brochure_cover.png' },
       { title: 'Infrastructure & Location Highlights', url: '/projects/the-mahek-park-1/brochure_feature.png' },
       { title: 'Master Layout Plan', url: '/projects/the-mahek-park-1/layout_plan.png' },
-      { title: 'Brochure Amenities Showcase', url: '/projects/the-mahek-park-1/amenities.png' }
+      { title: 'Project Amenities Ribbon', url: '/projects/the-mahek-park-1/amenities.png' },
+      { title: 'Ready for Construction Badge', url: '/projects/the-mahek-park-1/ready_badge.png' },
+      { title: 'Full Master Brochure Spread', url: '/projects/the-mahek-park-1/layout_full.png' }
     ],
     mapCoordinates: {
       lat: 21.2052,
@@ -71,7 +79,7 @@ export const projects = [
       zoom: 15
     },
     availability: 'Contact us for details',
-    pdfSource: 'PDF pages 2–3',
+    pdfSource: 'MASTER CATALOUGE Pages 2–3',
     seoTitle: 'The Mahek Park-1 | Industrial Plots on NH 48 Surat | Mahek Real Estate',
     seoDescription: 'Explore The Mahek Park-1 industrial plotted development on National Highway 48, near Ladvi Gurukul, Umrakh, Surat. Featuring 100ft & 60ft RCC roads, approved plans, and ready infrastructure.'
   },
@@ -95,6 +103,12 @@ export const projects = [
     layoutPlan: '/projects/orange-mahek-park/layout_plan.png',
     layoutTitle: 'Orange Mahek Park Industrial Layout Plan',
     layoutDescription: 'Engineered plotting layout featuring 80\'-0" and 60\'-0" wide logistics corridors, 33\'-0" internal access roads, and plots ranging from 221 sq.yd to 743 sq.yd.',
+    cardBadge: '80 Ft. Logistics Corridor',
+    keyUspList: [
+      'Opposite Ashwariya Mill, Kadodara Road',
+      '80 Ft. & 60 Ft. Wide Heavy RCC Avenues',
+      'Guaranteed Industrial Rental Income'
+    ],
     highlights: [
       'Tailored for Logistics, Storage, Textile & Packaging Industries',
       'Best Industrial Rental Income with Highway Connectivity',
@@ -139,7 +153,7 @@ export const projects = [
       zoom: 15
     },
     availability: 'Contact us for details',
-    pdfSource: 'PDF pages 4–5',
+    pdfSource: 'MASTER CATALOUGE Pages 4–5',
     seoTitle: 'Orange Mahek Park | Industrial Plots Surat-Bardoli Road | Mahek Real Estate',
     seoDescription: 'Orange Mahek Park offers industrial plots on Surat-Bardoli-Kadodara Road opposite Ashwariya Mill. Featuring 16.5x135 ft plots, 80ft roads, compound wall, and drainage.'
   },
@@ -174,6 +188,12 @@ export const projects = [
         description: 'Large executive suites up to CA 672 sq.ft (30\'-7.5" × 27\'-0") featuring a 396 sq.ft open landscaped sky terrace.'
       }
     ],
+    cardBadge: '16-Ft Clear Ceiling Height',
+    keyUspList: [
+      '16-Foot Voluminous Clear Floor Height',
+      '5-Layer Dedicated Structured Parking',
+      'Directly Opposite R.J.D Complex'
+    ],
     highlights: [
       '5-Layer Dedicated Multi-Level Parking',
       '16-Foot Floor Height for Generous Volume & Natural Light',
@@ -207,6 +227,7 @@ export const projects = [
       { label: 'Special Features', value: '8th Floor 396 SFT Open Terrace, Ground Floor Retail Arcade' }
     ],
     gallery: [
+      { title: 'Official Government Approved IT Park Poster', url: '/projects/mahek-it-park/official_poster.jpg' },
       { title: 'Architectural 3D Elevation', url: '/projects/mahek-it-park/hero.png' },
       { title: 'Project Brochure & Vertical Hubs', url: '/projects/mahek-it-park/brochure_specs.png' },
       { title: '3rd to 6th Floor Plan', url: '/projects/mahek-it-park/floor_3_to_6.png' },
@@ -219,7 +240,7 @@ export const projects = [
       zoom: 16
     },
     availability: 'Contact us for details',
-    pdfSource: 'PDF pages 6–7',
+    pdfSource: 'MASTER CATALOUGE Pages 6–7',
     seoTitle: 'Mahek I.T. Park | Commercial Offices in Katargam Surat | Mahek Real Estate',
     seoDescription: 'Mahek I.T. Park in Katargam, Surat opposite RJD Complex and near Kiran Hospital. Featuring 5-layer parking, 16ft floor height, and premium corporate offices.'
   },
@@ -264,6 +285,12 @@ export const projects = [
         description: 'Spacious dedicated basement parking with ingress/egress ramps, central store room, and elevator access.'
       }
     ],
+    cardBadge: '21-Ft Ground Showrooms',
+    keyUspList: [
+      '21-Ft Ground Floor Showroom Volume',
+      'Expansive 45m BRTS Road Corridor Frontage',
+      'Full 15-Ft High Basement Parking'
+    ],
     highlights: [
       'First Time in Surat: Exclusive Low-Rise G+2 Mega Complex',
       'Extraordinary 21 Ft. Ground Floor Showroom Height',
@@ -298,6 +325,7 @@ export const projects = [
       { label: 'Parking Infrastructure', value: 'Dedicated 15ft Basement Parking + Surface Customer Parking' }
     ],
     gallery: [
+      { title: 'Official Landmark Architectural Poster', url: '/projects/the-am-park/official_poster.jpg' },
       { title: 'Architectural Rendering on BRTS Road', url: '/projects/the-am-park/hero.png' },
       { title: 'Commercial Façade & Showroom Arcade', url: '/projects/the-am-park/facade.png' },
       { title: 'Official Brochure Spread', url: '/projects/the-am-park/brochure_full.png' },
@@ -313,7 +341,7 @@ export const projects = [
       zoom: 16
     },
     availability: 'Contact us for details',
-    pdfSource: 'PDF pages 8–9',
+    pdfSource: 'MASTER CATALOUGE Pages 8–9',
     seoTitle: 'The AM Park | G+2 Commercial Complex Simada BRTS Surat | Mahek Real Estate',
     seoDescription: 'The AM Park on Simada-BRTS Road, Surat at Bapa Sitaram Chowk. Featuring 21ft ground floor showrooms, 19.5ft 2nd floor, 15ft basement parking, and 45m road frontage.'
   },
@@ -336,6 +364,12 @@ export const projects = [
     layoutPlan: '/projects/anthems-mahek-park/layout_plan.png',
     layoutTitle: 'Anthems Mahek Park Master Layout Plan',
     layoutDescription: 'Organized master plan featuring 82 industrial/business plots, 12.19 Mt. wide entry road, 12.00 Mt. wide internal road, Owners Plot section, and perimeter landscaped Common Open Plot (COP).',
+    cardBadge: '82 Planned Business Plots',
+    keyUspList: [
+      '82 Demarcated Business & Shed Plots',
+      'Strategic Corridor Near Umiyadham Temple',
+      '12m Wide Main Paved Access Highway'
+    ],
     highlights: [
       'Strategic Location Near Umiyadham Temple on Umiyadham Road',
       'Verified Plot Sizes: 16\'-6" × 110\' | 16\'-6" × 107\' | 16\'-6" × 115\'',
@@ -377,7 +411,7 @@ export const projects = [
       zoom: 16
     },
     availability: 'Contact us for details',
-    pdfSource: 'PDF page 10',
+    pdfSource: 'MASTER CATALOUGE Page 10',
     seoTitle: 'Anthems Mahek Park | Business & Industrial Plots Umiyadham Road Surat | Mahek Real Estate',
     seoDescription: 'Anthems Mahek Park near Umiyadham Temple, Umiyadham Road, Surat. Offering 16.5x110, 16.5x107, 16.5x115 ft industrial plots with 12m wide roads and green zones.'
   },
@@ -400,6 +434,12 @@ export const projects = [
     layoutPlan: '/projects/mahek-residency/layout_plan.png',
     layoutTitle: 'Mahek Residency Master Residential Layout Plan',
     layoutDescription: 'Comprehensive gated plotted layout displaying 173 residential plots, multiple landscaped garden spaces, 18.00 Mt. wide main road, 7.50 Mt. and 6.00 Mt. internal avenues.',
+    cardBadge: '173 Gated Community Plots',
+    keyUspList: [
+      '173 Verified Residential Plots',
+      'Modern 2-Storey Twin Villa Bungalows',
+      'Monumental Security Entrance & Green Parks'
+    ],
     highlights: [
       'Prime Location Opposite Mansarovar Society on Godadra-Devadh Main Road',
       'Verified Residential Plot Sizes: 12\' × 37\' | 12\' × 53\' | 18\' × 37\'',
@@ -441,7 +481,7 @@ export const projects = [
       zoom: 16
     },
     availability: 'Contact us for details',
-    pdfSource: 'PDF page 11',
+    pdfSource: 'MASTER CATALOUGE Page 11',
     seoTitle: 'Mahek Residency | Residential Plots Godadra-Devadh Surat | Mahek Real Estate',
     seoDescription: 'Mahek Residency residential plotted development opposite Mansarovar Society, Godadra-Devadh Road, Surat. Featuring 12x37, 12x53, 18x37 ft plots, 18m road, and gardens.'
   }
@@ -486,8 +526,8 @@ export const getProjectBySlug = (slug) => {
       fullDescription: corp.description,
       heroImage: corp.image,
       image: corp.image,
-      pdfUrl: corp.pdfUrl || '/Mahek-Group-Profile.pdf',
-      pdfSource: 'Mahek Real Estate Official Portfolio',
+      pdfUrl: corp.pdfUrl || '/brochures/master-catalogue.pdf',
+      pdfSource: 'Mahek Real Estate Master Catalogue',
       layoutPlan: corp.image,
       layoutTitle: `${corp.title} Architectural Master Plan`,
       layoutDescription: `Architectural and development outline for ${corp.title}.`,

@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   MapPin, Check, Eye, Send, ArrowRight,
-  ShieldCheck, Layers, Ruler, Factory, Building2, Home, Share2
+  ShieldCheck, Layers, Ruler, Factory, Building2, Home, Share2, CheckCircle2
 } from 'lucide-react';
 import { projects } from '../data/projects';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -58,7 +58,7 @@ export default function SignatureProjects({ onViewDetails, onEnquire, activeFilt
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-[#c59b27]/8 rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#c59b27]/8 rounded-full blur-[140px] pointer-events-none"></div>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-2.5 sm:px-5 md:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-5">
@@ -92,34 +92,34 @@ export default function SignatureProjects({ onViewDetails, onEnquire, activeFilt
 
 
         {/* 6 Projects Responsive Grid (2 columns on mobile/small screen, 3 on desktop) */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-5 md:gap-6 lg:gap-8">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group rounded-xl sm:rounded-2xl overflow-hidden border border-[#c59b27]/25 bg-white hover:border-[#c59b27] transition-all duration-300 hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.22)] flex flex-col justify-between"
+              className="card-hover-fx group rounded-xl sm:rounded-2xl overflow-hidden border border-[#c59b27]/25 bg-white hover:border-[#c59b27] hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.22)] flex flex-col justify-between"
             >
               {/* Image Container with Badges */}
               <Link
                 to={`/project/${project.slug || project.id}`}
-                className="block relative h-36 sm:h-52 md:h-64 overflow-hidden bg-neutral-900 group/img"
+                className="block relative h-36 sm:h-52 md:h-64 overflow-hidden bg-neutral-900 group/img isolate"
               >
                 <img
                   src={project.heroImage}
                   alt={project.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-108 group-hover:scale-108"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover/img:scale-105 group-hover:scale-105 will-change-transform"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/30"></div>
                 
                 {/* Category Badge */}
-                <div className="absolute top-2 left-2 sm:top-3.5 sm:left-3.5">
-                  <span className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-xs font-bold uppercase tracking-wider bg-white/95 text-[#9a7210] border border-[#c59b27]/40 shadow-xs backdrop-blur-md">
+                <div className="absolute top-1.5 left-1.5 sm:top-3 sm:left-3">
+                  <span className="inline-flex items-center gap-1 sm:gap-1.5 px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-full text-[8.5px] sm:text-xs font-bold uppercase tracking-wider bg-white/95 text-[#9a7210] border border-[#c59b27]/40 shadow-xs backdrop-blur-md">
                     {getCategoryIcon(project.category)}
                     <span>{project.category}</span>
                   </span>
                 </div>
 
                 {/* Share Button (Top Right) */}
-                <div className="absolute top-2 right-2 sm:top-3.5 sm:right-3.5 z-10">
+                <div className="absolute top-1.5 right-1.5 sm:top-3 sm:right-3 z-10">
                   <button
                     type="button"
                     onClick={(e) => {
@@ -129,48 +129,77 @@ export default function SignatureProjects({ onViewDetails, onEnquire, activeFilt
                     }}
                     title="Share Project"
                     aria-label="Share Project"
-                    className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black/60 hover:bg-[#c59b27] text-white border border-white/20 flex items-center justify-center transition-all cursor-pointer backdrop-blur-md hover:scale-105 active:scale-95"
+                    className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-black/60 hover:bg-[#c59b27] text-white border border-white/20 flex items-center justify-center transition-all cursor-pointer backdrop-blur-md hover:scale-105 active:scale-95"
                   >
-                    <Share2 className="w-3.5 h-3.5" />
+                    <Share2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                   </button>
                 </div>
 
                 {/* Location Pill */}
-                <div className="absolute bottom-2 left-2 right-2 sm:bottom-3 sm:left-3 sm:right-3 flex items-center gap-1 text-[9px] sm:text-xs text-white bg-black/75 backdrop-blur-md px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl border border-white/20 font-medium truncate">
-                  <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#e5c365] shrink-0" />
+                <div className="absolute bottom-1.5 left-1.5 right-1.5 sm:bottom-3 sm:left-3 sm:right-3 flex items-center gap-1 text-[8.5px] sm:text-xs text-white bg-black/75 backdrop-blur-md px-1.5 py-0.5 sm:px-3 sm:py-1.5 rounded-md sm:rounded-xl border border-white/20 font-medium truncate">
+                  <MapPin className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-[#e5c365] shrink-0" />
                   <span className="truncate">{project.location}</span>
                 </div>
+
+                {/* Standout Key USP Badge on Image */}
+                {project.cardBadge && (
+                  <div className="absolute bottom-8 sm:bottom-12 left-1.5 sm:left-3 pointer-events-none z-10">
+                    <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[8px] sm:text-[11px] font-bold bg-white/95 text-[#9a7210] border border-[#c59b27]/40 shadow-md backdrop-blur-md">
+                      <ShieldCheck className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#c59b27] shrink-0" />
+                      <span className="truncate max-w-[110px] min-[400px]:max-w-[140px] sm:max-w-none">{project.cardBadge}</span>
+                    </span>
+                  </div>
+                )}
               </Link>
 
-              {/* Card Content */}
-              <div className="p-3 sm:p-5 md:p-6 flex-1 flex flex-col justify-between">
+              {/* Card Content (Balanced side spacing for small screens) */}
+              <div className="px-2.5 py-3 sm:px-4 sm:py-4 md:p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-sm sm:text-lg md:text-xl font-bold font-serif text-neutral-900 group-hover:text-[#9a7210] transition-colors mb-1 sm:mb-2 line-clamp-1">
+                  <h3 className="text-xs sm:text-lg md:text-xl font-bold font-serif text-neutral-900 group-hover:text-[#9a7210] transition-colors mb-1 sm:mb-2 line-clamp-1">
                     <Link to={`/project/${project.slug || project.id}`}>
                       {project.name}
                     </Link>
                   </h3>
                   
-                  <p className="text-[11px] sm:text-xs text-neutral-600 line-clamp-2 leading-relaxed mb-2.5 sm:mb-4 font-normal">
+                  <p className="text-[10px] sm:text-xs text-neutral-600 line-clamp-2 leading-relaxed mb-2 sm:mb-3 font-normal">
                     {project.shortDescription}
                   </p>
 
-                  {/* Highlights Bullet Points */}
-                  <div className="hidden sm:block space-y-2 mb-5">
-                    {project.highlights.slice(0, 3).map((hl, i) => (
-                      <div key={i} className="flex items-start gap-2 text-xs text-neutral-700 font-medium">
-                        <Check className="w-3.5 h-3.5 text-[#c59b27] shrink-0 mt-0.5" />
-                        <span className="line-clamp-1">{hl}</span>
-                      </div>
-                    ))}
+                  {/* Prominent Project Highlights Section - Visible on BOTH Mobile & Desktop */}
+                  <div className="mt-1.5 pt-1.5 sm:mt-3 sm:pt-3 border-t border-[#c59b27]/20 mb-2.5 sm:mb-4">
+                    <div className="flex items-center justify-between mb-1 sm:mb-2">
+                      <span className="inline-flex items-center gap-1 text-[8.5px] sm:text-[11px] font-bold uppercase tracking-wider text-[#9a7210]">
+                        <CheckCircle2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#c59b27] shrink-0" />
+                        <span>Project Highlights</span>
+                      </span>
+                      {project.highlights && project.highlights.length > 2 && (
+                        <span className="text-[7.5px] sm:text-[10px] text-neutral-400 font-medium">
+                          +{project.highlights.length - 2} verified
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="space-y-1 sm:space-y-2">
+                      {(project.keyUspList || project.highlights.slice(0, 2)).slice(0, 2).map((hl, i) => (
+                        <div
+                          key={i}
+                          className="px-1.5 py-0.5 sm:px-2.5 sm:py-1.5 rounded-md sm:rounded-xl bg-[#faf8f2] border border-[#c59b27]/25 hover:border-[#c59b27]/50 flex items-center gap-1 sm:gap-2 transition-colors"
+                        >
+                          <CheckCircle2 className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-[#c59b27] shrink-0" />
+                          <span className="text-[9px] sm:text-xs font-semibold text-neutral-800 line-clamp-1 leading-snug">
+                            {hl}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
                 {/* Action Buttons: View Details, Enquire Now & WhatsApp Enquiry */}
-                <div className="pt-2.5 sm:pt-4 border-t border-neutral-100 flex items-center gap-1 sm:gap-2">
+                <div className="pt-2 sm:pt-4 border-t border-neutral-100 flex items-center gap-1 sm:gap-2">
                   <Link
                     to={`/project/${project.slug || project.id}`}
-                    className="flex-1 py-1.5 sm:py-2 px-1.5 sm:px-2 rounded-lg sm:rounded-xl bg-white border border-[#c59b27]/40 hover:border-[#c59b27] text-[#9a7210] hover:text-white hover:bg-[#c59b27] font-bold text-[10px] sm:text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer hover:shadow-md"
+                    className="flex-1 py-1.5 sm:py-2 px-1 sm:px-2 rounded-lg sm:rounded-xl bg-white border border-[#c59b27]/40 hover:border-[#c59b27] text-[#9a7210] hover:text-white hover:bg-[#c59b27] font-bold text-[9.5px] sm:text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer hover:shadow-md"
                     title="View Project Details"
                   >
                     <Eye className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
@@ -179,7 +208,7 @@ export default function SignatureProjects({ onViewDetails, onEnquire, activeFilt
 
                   <button
                     onClick={() => onEnquire && onEnquire(project)}
-                    className="py-1.5 sm:py-2 px-1.5 sm:px-3 rounded-lg sm:rounded-xl bg-[#c59b27] hover:bg-[#aa7f17] text-white font-bold text-[10px] sm:text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer shadow-xs hover:shadow-[0_4px_15px_rgba(197,155,39,0.3)] shrink-0"
+                    className="py-1.5 sm:py-2 px-1.5 sm:px-3 rounded-lg sm:rounded-xl bg-[#c59b27] hover:bg-[#aa7f17] text-white font-bold text-[9.5px] sm:text-xs tracking-wider transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer shadow-xs hover:shadow-[0_4px_15px_rgba(197,155,39,0.3)] shrink-0"
                     title="Enquire Now"
                   >
                     <Send className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
@@ -197,7 +226,7 @@ export default function SignatureProjects({ onViewDetails, onEnquire, activeFilt
                     aria-label="WhatsApp Enquiry"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current shrink-0" />
-                    <span className="hidden xl:inline text-xs font-bold uppercase tracking-wider">WhatsApp</span>
+                    <span className="hidden xl:inline text-xs font-bold tracking-wider">WhatsApp</span>
                   </a>
                 </div>
               </div>

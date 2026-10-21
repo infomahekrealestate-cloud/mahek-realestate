@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { EMAIL_CONFIG } from '../config/emailConfig';
 import { sendLeadEnquiry } from '../services/enquiryService';
+import advisorImg from '../assets/images/people/kavita-sharma.jpg';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -230,8 +231,8 @@ export default function ContactSection() {
                     <span className="text-[11px] uppercase tracking-wider text-[#9a7210] font-bold block mb-0.5">
                       Corporate Email
                     </span>
-                    <a href="mailto:infomahek2@gmail.com" className="text-xs sm:text-sm font-bold text-neutral-900 hover:text-[#9a7210] transition-colors block">
-                      infomahek2@gmail.com
+                    <a href="mailto:info.mahekrealestate@gmail.com" className="text-xs sm:text-sm font-bold text-neutral-900 hover:text-[#9a7210] transition-colors block">
+                      info.mahekrealestate@gmail.com
                     </a>
                     <p className="text-[11px] text-neutral-500 mt-0.5">
                       Official correspondence & investor relations
@@ -270,6 +271,41 @@ export default function ContactSection() {
               </div>
 
             </div>
+
+            {/* Dedicated Senior Client Advisor Card
+            <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#c59b27]/30 hover:border-[#c59b27] transition-all flex items-center gap-4 shadow-sm hover:shadow-md">
+              <img
+                src={advisorImg}
+                alt="Kavita Sharma - Senior Real Estate & Investment Advisor"
+                className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-[#c59b27]/60 shadow-xs flex-shrink-0"
+              />
+              <div className="flex-1 min-w-0">
+                <span className="text-[10px] uppercase font-bold tracking-wider text-[#9a7210] block">
+                  Dedicated Client Desk
+                </span>
+                <h4 className="text-sm sm:text-base font-bold font-serif text-neutral-900 truncate">
+                  Kavita Sharma
+                </h4>
+                <p className="text-xs text-neutral-600 font-medium truncate">
+                  Senior Real Estate & Investment Advisor
+                </p>
+                <div className="flex items-center gap-3 mt-1.5 text-[11px] text-[#9a7210] font-semibold">
+                  <a href="tel:+919377744633" className="hover:underline flex items-center gap-1">
+                    <Phone className="w-3 h-3 text-[#c59b27]" />
+                    <span>Call Advisory</span>
+                  </a>
+                  <span>•</span>
+                  <a
+                    href="https://wa.me/919376622000?text=Hello%20Kavita%2C%20I%20would%20like%20to%20discuss%20Mahek%20Group%20developments."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline text-emerald-600 font-bold flex items-center gap-1"
+                  >
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div> */}
 
           </div>
 

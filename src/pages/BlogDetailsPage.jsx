@@ -160,11 +160,11 @@ export default function BlogDetailsPage() {
             </header>
 
             {/* Featured Image */}
-            <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-[#c59b27]/25 shadow-sm bg-neutral-100 aspect-[16/10] sm:aspect-[16/9]">
+            <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-[#c59b27]/25 shadow-sm bg-neutral-950 aspect-[16/10] sm:aspect-[16/9]">
               <img
                 src={article.image}
                 alt={article.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain bg-neutral-950"
                 loading="eager"
               />
             </div>
@@ -280,8 +280,8 @@ export default function BlogDetailsPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5 text-[#c59b27] shrink-0" />
-                  <a href="mailto:infomahek2@gmail.com" className="hover:text-[#9a7210] font-medium">
-                    infomahek2@gmail.com
+                  <a href="mailto:info.mahekrealestate@gmail.com" className="hover:text-[#9a7210] font-medium">
+                    info.mahekrealestate@gmail.com
                   </a>
                 </div>
               </div>
@@ -320,14 +320,14 @@ export default function BlogDetailsPage() {
               {relatedArticles.map((rel) => (
                 <article
                   key={rel.id}
-                  className="bg-white rounded-xl border border-[#c59b27]/25 hover:border-[#c59b27] overflow-hidden shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col group"
+                  className="card-hover-fx bg-white rounded-xl border border-[#c59b27]/25 hover:border-[#c59b27] overflow-hidden hover:shadow-md flex flex-col group"
                 >
-                  <div className="aspect-[16/10] bg-neutral-100 overflow-hidden relative">
+                  <div className="aspect-[16/10] bg-neutral-100 overflow-hidden relative isolate">
                     <img
                       src={rel.image}
                       alt={rel.title}
                       loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out will-change-transform"
                     />
                     <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider bg-white/95 text-[#9a7210] border border-[#c59b27]/30 shadow-2xs">
                       {rel.categoryBadge || rel.category}

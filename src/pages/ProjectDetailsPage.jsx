@@ -137,7 +137,7 @@ export default function ProjectDetailsPage() {
       targetUrl = knownPdfMap[project.id] || knownPdfMap[project.slug];
     }
     if (!targetUrl) {
-      targetUrl = '/Mahek-Group-Profile.pdf';
+      targetUrl = '/brochures/master-catalogue.pdf';
     }
 
     const cleanName = (project.name || 'Mahek_Group_Project').replace(/[^a-zA-Z0-9_-]/g, '_');

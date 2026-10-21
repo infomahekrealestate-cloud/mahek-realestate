@@ -1,12 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { ArrowUp, Mail } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 
-export default function FloatingActions({ onOpenContact, onOpenEnquiry }) {
+export default function FloatingActions() {
   const [showScroll, setShowScroll] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,21 +15,6 @@ export default function FloatingActions({ onOpenContact, onOpenEnquiry }) {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleEmailClick = () => {
-    if (onOpenEnquiry) {
-      onOpenEnquiry();
-    } else if (onOpenContact && location.pathname === '/') {
-      onOpenContact();
-    } else if (location.pathname === '/') {
-      const contactElem = document.getElementById('contact');
-      if (contactElem) {
-        contactElem.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      navigate('/#contact');
-    }
   };
 
   const handleWhatsAppClick = () => {
@@ -54,19 +36,6 @@ export default function FloatingActions({ onOpenContact, onOpenEnquiry }) {
           <ArrowUp className="w-4 h-4" />
         </button>
       )}
-
-      {/* Email Enquiry Button */}
-      <button
-        onClick={handleEmailClick}
-        aria-label="Email Enquiry"
-        title="Email Enquiry"
-        className="group relative w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#c59b27] hover:bg-[#aa7f17] text-white flex items-center justify-center shadow-lg hover:shadow-[0_4px_20px_rgba(197,155,39,0.35)] transition-all hover:scale-110 active:scale-95 cursor-pointer"
-      >
-        <Mail className="w-5 h-5 sm:w-5 sm:h-5" />
-        <span className="absolute right-full mr-2.5 px-2.5 py-1 rounded-lg bg-neutral-900 text-white text-[11px] font-semibold whitespace-nowrap shadow-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none hidden sm:block">
-          Email Enquiry
-        </span>
-      </button>
 
       {/* WhatsApp Enquiry Button */}
       <button

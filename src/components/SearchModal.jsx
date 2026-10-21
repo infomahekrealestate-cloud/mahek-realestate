@@ -61,7 +61,7 @@ export default function SearchModal({ isOpen, onClose, onSelectProject }) {
           fullDescription: p.description,
           heroImage: p.image,
           image: p.image,
-          pdfUrl: p.pdfUrl || '/Mahek-Group-Profile.pdf',
+          pdfUrl: p.pdfUrl || '/brochures/master-catalogue.pdf',
           layoutPlan: p.image,
           layoutTitle: `${p.title} Development Overview`,
           layoutDescription: `Architectural and development outline for ${p.title}.`,

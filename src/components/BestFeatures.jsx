@@ -1,7 +1,7 @@
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
-import bgHousePlanning from '../assets/images/e1.jpg';
-import bgConstruction from '../assets/images/111.webp';
-import bgInterior from '../assets/images/e2.jpg';
+import bgLeadership from '../assets/images/people/difference-leadership.jpg';
+import bgGlobal from '../assets/images/people/difference-global.jpg';
+import bgInfrastructure from '../assets/images/people/indian-engineer.jpg';
 import iconHousePlanning from '../assets/images/blueprint.png';
 import iconConstruction from '../assets/images/construction.png';
 import iconInterior from '../assets/images/interior-design_1.png';
@@ -15,7 +15,7 @@ export default function BestFeatures({ onSelectFeature }) {
       titleLine2: 'Leadership',
       category: 'PEOPLE. PASSION. PROGRESS.',
       description: 'Synergistic investments across technical textiles, pharmaceuticals, real estate, lab-grown diamonds, and global hospitality, driving sustained value across Surat and international markets.',
-      bg: bgHousePlanning,
+      bg: bgLeadership,
       icon: iconHousePlanning,
       highlights: ['Technical Textiles (Scap Group)', 'Pharmaceuticals (Mahek Life Science)', '18+ Real Estate Landmarks', 'Hilton Hospitality Partnership']
     },
@@ -26,7 +26,7 @@ export default function BestFeatures({ onSelectFeature }) {
       titleLine2: '& Quality Standards',
       category: 'COLLABORATION & TRUST',
       description: "Partnering with Hilton Worldwide to introduce Gujarat's 1st Hilton Garden Inn, paired with ISO 9001:2015 certified technical textile manufacturing serving Fortune 500 corporations.",
-      bg: bgConstruction,
+      bg: bgGlobal,
       icon: iconConstruction,
       highlights: ['Hilton Worldwide Collaboration', 'ISO 9001:2015 Certified Operations', 'Fortune 500 Trusted Supplier', 'GMP Pharmaceutical Compliance']
     },
@@ -37,7 +37,7 @@ export default function BestFeatures({ onSelectFeature }) {
       titleLine2: '& Future Growth',
       category: 'CREATING SUSTAINABLE FUTURES',
       description: 'Pioneering future-ready industrial and commercial environments from Mahek IT Park and Diamond Park to eco-conscious technical textile manufacturing of 25M+ meters per annum.',
-      bg: bgInterior,
+      bg: bgInfrastructure,
       icon: iconInterior,
       highlights: ['25M+ Meters/Yr Textile Output', 'Mahek IT Park & Diamond Park', 'Industrial Master-Planned Parks', 'Vital API Intermediates Supply']
     }
@@ -67,14 +67,14 @@ export default function BestFeatures({ onSelectFeature }) {
           {features.map((item, idx) => (
             <div 
               key={item.id}
-              className="group relative rounded-2xl overflow-hidden border border-[#c59b27]/25 bg-white hover:border-[#c59b27] transition-all duration-500 hover:shadow-[0_20px_40px_-15px_rgba(197,155,39,0.25)] flex flex-col justify-between"
+              className="card-hover-fx group relative rounded-2xl overflow-hidden border border-[#c59b27]/25 bg-white hover:border-[#c59b27] hover:shadow-[0_20px_40px_-15px_rgba(197,155,39,0.25)] flex flex-col justify-between"
             >
               {/* Background Image Container with Zoom Effect */}
-              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden isolate">
                 <img 
                   src={item.bg} 
                   alt={item.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105 will-change-transform"
                 />
                 
                 {/* Floating Icon Emblem */}

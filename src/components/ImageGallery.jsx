@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import {
   ChevronLeft, ChevronRight, MapPin, Calendar,
-  Building2, Sparkles, Image as ImageIcon,
+  Building2, Layers, Image as ImageIcon,
   CheckCircle2, ArrowRight
 } from 'lucide-react';
 
@@ -205,7 +205,7 @@ export default function ImageGallery() {
                     : 'bg-white text-neutral-700 border-neutral-200/90 hover:border-[#c59b27]/60 hover:text-[#9a7210]'
                 }`}
               >
-                <Sparkles className={`w-3.5 h-3.5 ${filter === 'all' ? 'text-white' : 'text-[#c59b27]'}`} />
+                <Layers className={`w-3.5 h-3.5 ${filter === 'all' ? 'text-white' : 'text-[#c59b27]'}`} />
                 <span>All Images</span>
                 <span className={`text-[10px] px-1.5 py-0.5 rounded-md font-bold transition-colors ${
                   filter === 'all' ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-600 group-hover:bg-[#c59b27]/10 group-hover:text-[#9a7210]'

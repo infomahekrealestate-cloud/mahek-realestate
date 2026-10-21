@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import heroVideo from '../assets/videos/hero-banner.mp4';
 import posterImg from '../assets/images/Screenshot_2025-09-12_134856_170b8efc-fcd0-41e0-8231-7eead09ac193_1200x.png';
-import avatar1 from '../assets/images/31.jpg';
-import avatar2 from '../assets/images/21.jpg';
-import avatar3 from '../assets/images/52.jpg';
+import avatar1 from '../assets/images/people/rajesh-patel.jpg';
+import avatar2 from '../assets/images/people/pooja-shah.jpg';
+import avatar3 from '../assets/images/people/harshvardhan-kothari.jpg';
 import { Award, Building, CheckCircle2, Users } from 'lucide-react';
 
 export default function Hero({ onExploreProjects, onOpenContact: _onOpenContact }) {
@@ -163,7 +163,7 @@ export default function Hero({ onExploreProjects, onOpenContact: _onOpenContact 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3 md:gap-4">
 
             {/* Stat 1: Year Founded */}
-            <div className="bg-white rounded-xl p-2.5 sm:p-3.5 md:p-4 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
+            <div className="card-hover-fx bg-white rounded-xl p-2.5 sm:p-3.5 md:p-4 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md group">
               <div className="flex justify-center mb-1.5 sm:mb-2">
                 <span className="p-1.5 sm:p-2 rounded-full bg-[#c59b27]/10 text-[#9a7210] group-hover:scale-110 transition-transform">
                   <Award className="w-4 h-4 sm:w-5 sm:h-5 text-[#c59b27]" />
@@ -179,7 +179,7 @@ export default function Hero({ onExploreProjects, onOpenContact: _onOpenContact 
             </div>
 
             {/* Stat 2: Real Estate Projects */}
-            <div className="bg-white rounded-xl p-2.5 sm:p-5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
+            <div className="card-hover-fx bg-white rounded-xl p-2.5 sm:p-5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md group">
               <div className="flex justify-center mb-1.5 sm:mb-2">
                 <span className="p-1.5 sm:p-2 rounded-full bg-[#c59b27]/10 text-[#9a7210] group-hover:scale-110 transition-transform">
                   <Building className="w-4 h-4 sm:w-5 sm:h-5 text-[#c59b27]" />
@@ -196,7 +196,7 @@ export default function Hero({ onExploreProjects, onOpenContact: _onOpenContact 
             </div>
 
             {/* Stat 3: Scap Group Production */}
-            <div className="bg-white rounded-xl p-2.5 sm:p-5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
+            <div className="card-hover-fx bg-white rounded-xl p-2.5 sm:p-5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md group">
               <div className="flex justify-center mb-1.5 sm:mb-2">
                 <span className="p-1.5 sm:p-2 rounded-full bg-[#c59b27]/10 text-[#9a7210] group-hover:scale-110 transition-transform">
                   <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#c59b27]" />
@@ -213,7 +213,7 @@ export default function Hero({ onExploreProjects, onOpenContact: _onOpenContact 
             </div>
 
             {/* Stat 4: Hilton Collaboration */}
-            <div className="bg-white rounded-xl p-2.5 sm:p-5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
+            <div className="card-hover-fx bg-white rounded-xl p-2.5 sm:p-5 md:p-6 text-center border border-neutral-200/80 hover:border-[#c59b27] hover:shadow-md group">
               <div className="flex justify-center mb-1.5 sm:mb-2">
                 <span className="p-1.5 sm:p-2 rounded-full bg-[#c59b27]/10 text-[#9a7210] group-hover:scale-110 transition-transform">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#c59b27]" />

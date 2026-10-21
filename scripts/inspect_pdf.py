@@ -1,6 +1,6 @@
 import pymupdf
 
-doc = pymupdf.open('Mahek Group Profile.pdf')
+doc = pymupdf.open('MASTER CATALOUGE.pdf')
 for i, page in enumerate(doc):
     imgs = page.get_images()
     for img_info in imgs:
